@@ -1,5 +1,5 @@
 Message stats for scenario RandomWayPoint-Closeness
-sim_time: 112.0000
+sim_time: 58.0000
 created: 1
 started: 0
 relayed: 0

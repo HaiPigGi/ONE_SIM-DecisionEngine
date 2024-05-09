@@ -1,0 +1,20 @@
+Message stats for scenario SnWDecisionEngine
+sim_time: 43200.1000
+created: 1463
+started: 21158
+relayed: 7650
+aborted: 13507
+dropped: 7001
+removed: 618
+delivered: 618
+delivery_prob: 0.4224
+response_prob: 0.0000
+overhead_ratio: 11.3786
+latency_avg: 3462.9136
+latency_med: 2612.4000
+hopcount_avg: 2.4790
+hopcount_med: 2
+buffertime_avg: 3873.0009
+buffertime_med: 3216.9000
+rtt_avg: NaN
+rtt_med: NaN

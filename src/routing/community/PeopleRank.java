@@ -341,8 +341,12 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
     }
 
     @Override
-    public void update(DTNHost thisHost) {}
+    public void update(DTNHost thisHost) {
+    }
 
+    /**
+     * its for reports
+     */
     public Map<DTNHost, Double> getAllRankings() {
         Map<DTNHost, Double> rankings = new HashMap<>();
 
@@ -351,6 +355,8 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
             DTNHost currentHost = entry.getKey();
             TupleDe<Double, Integer> tuple = entry.getValue();
 
+            // double getRank = entry.getValue();
+
             // Add the host and its ranking to the map
             rankings.put(currentHost, tuple.getFirst());
         }
@@ -358,18 +364,11 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
         return rankings;
     }
 
-    public double getRanking(DTNHost host) {
-        // Check if the host exists in the per map
-        if (per.containsKey(host)) {
-            // Retrieve the tuple containing the PeopleRank value for the host
-            TupleDe<Double, Integer> tuple = per.get(host);
-            // Return the PeopleRank value from the tuple
-            System.out.println(tuple.getFirst());
-            return tuple.getFirst();
-        } else {
-            // If the host is not found in the per map, return a default value (e.g., 0)
-            return 0.0; // or any other default value as per your requirement
-        }
+    @Override
+    public int getTotalTeman(DTNHost host) {
+        DecisionEngineRouter d = (DecisionEngineRouter) host.getRouter();
+        PeopleRank othRouter = (PeopleRank) d.getDecisionEngine();
+        return othRouter.per.size();
     }
 
 }

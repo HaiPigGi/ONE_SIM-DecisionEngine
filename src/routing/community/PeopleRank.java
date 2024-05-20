@@ -58,7 +58,7 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
      * Map to store the PeopleRank values for each host along with the total number
      * of friends
      */
-    protected Map<DTNHost, TupleDe<Double, Integer>> per = new HashMap<>();
+    protected Map<DTNHost, TupleDe<Double, Integer>> per;
     protected Map<DTNHost, List<Duration>> connHistory; // Store connection history for each host
     protected Map<DTNHost, Double> startTimestamps; // Store the start timestamps for each connection
     protected Set<DTNHost> thisHostSet; // Set to store friends of this host
@@ -83,9 +83,9 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
         } else {
             this.treshold = 700;
         }
-        connHistory = new HashMap<>();
+        connHistory = new HashMap<DTNHost, List<Duration>>();
         per = new HashMap<>();
-        thisHostSet = new HashSet<>();
+        thisHostSet = new HashSet<DTNHost>();
     }
 
     /**
@@ -99,8 +99,9 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
         this.treshold = r.treshold;
         startTimestamps = new HashMap<DTNHost, Double>();
         // Initialize a new connection history map
-        this.connHistory = new HashMap<>();
-        this.thisHostSet = new HashSet<>();
+        this.connHistory = new HashMap<DTNHost, List<Duration>>();
+        this.thisHostSet = new HashSet<DTNHost>();
+        this.per = new HashMap<>();
     }
 
     @Override

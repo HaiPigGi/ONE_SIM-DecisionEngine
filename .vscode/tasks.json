@@ -8,7 +8,7 @@
     },
     {
       "label": "run_one",
-      "command": "./one.bat -b 1 default_settings.txt",
+      "command": "./one.bat -b 1 ./conf/PeopleRank_Settings.txt",
       "type": "shell"
     },
     {

@@ -37,8 +37,8 @@ Group.router = DecisionEngineRouter
 #For DecisionEngineRouter
 Group.router = DecisionEngineRouter
 DecisionEngineRouter.decisionEngine = community.PeopleRank
-DecisionEngineRouter.familiarThreshold = 700
-DecisionEngineRouter.dumpingFactor = 0.85
+DecisionEngineRouter.threshold = 1000
+DecisionEngineRouter.dumpingFactor = 0.95
 
 #DecisionEngineRouter.fclSimilarity = fcl/Haggle3-Infocom5.fcl
 
@@ -74,7 +74,7 @@ Events.nrof = 2
 Events1.class = ExternalEventsQueue
 # (following settings are specific for the MessageEventGenerator class)
 # Creation interval in seconds (one new message every 25 to 35 seconds)
-Events1.filePath = RealityConnectionTraceFinal.txt
+Events1.filePath = ./conf/RealityConnectionTraceFinal.txt
 #Haggle3-Infocom5.csv
 # RealityConnectionTraceFinal.txt
 
@@ -110,9 +110,9 @@ MovementModel.worldSize = 100, 100
 MovementModel.warmup = 1000
 
 # how many reports to load
-Report.nrofReports = 1
+Report.nrofReports = 2
 # length of the warm up period (simulated seconds)
-Report.warmup = 1
+Report.warmup = 2
 # default directory of reports (can be overridden per Report with output setting)
 #Report.reportDir = reports/FuzzyDataSet/Haggle3-Infocom5/SimilarityDataSet
 Report.reportDir = reports/PeopleRank2
@@ -120,7 +120,7 @@ Report.reportDir = reports/PeopleRank2
 #Report.reportDir = reports/FuzzyFix/Haggle3-Infocom5
  Report classes to load
 Report.report1 = MessageStatsReport
-#Report.report2 = CommunityDetectionReport
+Report.report2 = RankingTotal
 #Report.report1 = BufferOccupancyReport
 #Report.report1 = ResourceNodeTiapWaktuReport
 #Report.report1 = MessageDeliveredPerContactReport

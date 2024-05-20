@@ -1,126 +1,256 @@
-Ranking for Host w88: 0.05083260298253021
-Ranking for Host w104: 0.05096839959721235
-Ranking for Host c43: 0.05083260298218602
-Ranking for Host p28: 0.05096839959682727
-Ranking for Host w105: 0.050832602981876626
-Ranking for Host p9: 0.050968399596126514
-Ranking for Host w96: 0.05083260298159958
-Ranking for Host p24: 0.050930460336595526
-Ranking for Host p38: 0.05083260298147244
-Ranking for Host p20: 0.05096839959580887
-Ranking for Host w118: 0.05096839959523433
-Ranking for Host w89: 0.05083260298093931
-Ranking for Host w97: 0.05096839959497561
-Ranking for Host w85: 0.05096839959473473
-Ranking for Host p37: 0.05094916074685105
-Ranking for Host c74: 0.05083260298061991
-Ranking for Host p10: 0.050949130586059606
-Ranking for Host c75: 0.05093046033449856
-Ranking for Host c62: 0.05083260298037863
-Ranking for Host w103: 0.05072586315999218
-Ranking for Host p39: 0.05083260298032882
-Ranking for Host p35: 0.050968399593617625
-Ranking for Host c47: 0.05074164220204454
-Ranking for Host p34: 0.050968399593478805
-Ranking for Host t120: 0.050968399593235195
-Ranking for Host w95: 0.050949094522887824
-Ranking for Host t123: 0.050968399593032475
-Ranking for Host w112: 0.050968399592944844
-Ranking for Host w87: 0.050832602980027404
-Ranking for Host t121: 0.050968399592865574
-Ranking for Host p27: 0.05096839959279406
-Ranking for Host p7: 0.05072403329669494
-Ranking for Host p2: 0.05093046033345612
-Ranking for Host c57: 0.050968399592729766
-Ranking for Host c56: 0.050968399592672145
-Ranking for Host p5: 0.050968399592620686
-Ranking for Host w86: 0.050930460333315296
-Ranking for Host c54: 0.05096839959249845
-Ranking for Host p18: 0.05254991064039019
-Ranking for Host p6: 0.05074161913190046
-Ranking for Host c42: 0.05072232637259662
-Ranking for Host c48: 0.05096839959246693
-Ranking for Host c76: 0.050968399592415246
-Ranking for Host w114: 0.05096839959239434
-Ranking for Host c55: 0.05094906186693155
-Ranking for Host p21: 0.050968399592376264
-Ranking for Host w109: 0.05083260297989047
-Ranking for Host w80: 0.0509683995923607
-Ranking for Host c53: 0.050968399592335956
-Ranking for Host c44: 0.05083260297987612
-Ranking for Host w99: 0.05074161246596956
-Ranking for Host p26: 0.05237090693306938
-Ranking for Host p11: 0.050832602979869475
-Ranking for Host w102: 0.050968399592317984
-Ranking for Host p30: 0.05096839959230502
-Ranking for Host p12: 0.05096839959229993
-Ranking for Host c63: 0.05083260297986076
-Ranking for Host w81: 0.050832602979859226
-Ranking for Host c60: 0.0509683995922917
-Ranking for Host c71: 0.05096839959228831
-Ranking for Host c65: 0.05096839959228527
-Ranking for Host w113: 0.05096839959851854
-Ranking for Host p31: 0.05096839959900776
-Ranking for Host c45: 0.050968399598056935
-Ranking for Host w93: 0.05094922876038673
-Ranking for Host w115: 0.05074169055692059
-Ranking for Host c79: 0.050968399597621894
-Ranking for Host c67: 0.05096839959646566
-Ranking for Host p23: 0.05094918962126798
-Ranking for Host p3: 0.05195796283764332
-Ranking for Host w91: 0.05083260298135251
-Ranking for Host w98: 0.05094918357430757
-Ranking for Host p4: 0.05093046033605838
-Ranking for Host p22: 0.050832602981239504
-Ranking for Host c70: 0.05096839959551178
-Ranking for Host c59: 0.05094917188851631
-Ranking for Host p13: 0.05096839959451084
-Ranking for Host w106: 0.05094915538004829
-Ranking for Host c50: 0.050968399594303104
-Ranking for Host c58: 0.05093046033537124
-Ranking for Host w82: 0.05094914505446815
-Ranking for Host w111: 0.050949140095677165
-Ranking for Host c49: 0.050968399593932824
-Ranking for Host c78: 0.050968399594110696
-Ranking for Host c52: 0.050832602980552845
-Ranking for Host c41: 0.05083260298043243
-Ranking for Host w117: 0.05083260298049043
-Ranking for Host c68: 0.05096839959376872
-Ranking for Host c77: 0.050949121620350146
-Ranking for Host w92: 0.051771702989553615
-Ranking for Host c40: 0.05094911319849603
-Ranking for Host p36: 0.05074164386453028
-Ranking for Host t122: 0.05096839959335156
-Ranking for Host c66: 0.05096839959312905
-Ranking for Host p0: 0.05225674474653266
-Ranking for Host w83: 0.050832602980132466
-Ranking for Host p29: 0.05083260298007498
-Ranking for Host p17: 0.051633306766091444
-Ranking for Host w119: 0.05072386718408209
-Ranking for Host w100: 0.050741629043664305
-Ranking for Host c46: 0.05257684764629188
-Ranking for Host w101: 0.05083260297994371
-Ranking for Host p8: 0.05096839959257489
-Ranking for Host c73: 0.050832602979931876
-Ranking for Host p14: 0.05094906946917836
-Ranking for Host t124: 0.0509683995925343
-Ranking for Host t125: 0.050832602979912093
-Ranking for Host w116: 0.05093046033314566
-Ranking for Host w108: 0.050930460333128126
-Ranking for Host w110: 0.05096839959243932
-Ranking for Host p16: 0.05094906030598738
-Ranking for Host w107: 0.05072118454781628
-Ranking for Host c61: 0.050968399592347356
-Ranking for Host p32: 0.05093046033306331
-Ranking for Host c69: 0.05093046033305726
-Ranking for Host p33: 0.05096839959232624
-Ranking for Host c64: 0.05083260297987256
-Ranking for Host w94: 0.05096839959231098
-Ranking for Host c51: 0.05093046033304769
-Ranking for Host w90: 0.05093046033304389
-Ranking for Host p1: 0.050720044595862206
-Ranking for Host p25: 0.050719556616853984
-Ranking for Host c72: 0.05083260297985786
-Ranking for Host p15: 0.050832602979854535
-Ranking for Host p19: 0.05096839959229554
-Ranking for Host w84: 0.050930460333032765
+Host                 || Total Friend
+
+--------------------------------------------------------
+
+ p0                   || 33        
+
+ p1                   || 24        
+
+ p2                   || 30        
+
+ p3                   || 18        
+
+ p4                   || 26        
+
+ p5                   || 22        
+
+ p6                   || 14        
+
+ p7                   || 21        
+
+ p8                   || 24        
+
+ p9                   || 27        
+
+ p10                  || 25        
+
+ p11                  || 27        
+
+ p12                  || 19        
+
+ p13                  || 25        
+
+ p14                  || 22        
+
+ p15                  || 23        
+
+ p16                  || 29        
+
+ p17                  || 28        
+
+ p18                  || 23        
+
+ p19                  || 24        
+
+ p20                  || 32        
+
+ p21                  || 24        
+
+ p22                  || 23        
+
+ p23                  || 24        
+
+ p24                  || 21        
+
+ p25                  || 24        
+
+ p26                  || 28        
+
+ p27                  || 17        
+
+ p28                  || 33        
+
+ p29                  || 30        
+
+ p30                  || 27        
+
+ p31                  || 26        
+
+ p32                  || 19        
+
+ p33                  || 24        
+
+ p34                  || 32        
+
+ p35                  || 27        
+
+ p36                  || 27        
+
+ p37                  || 16        
+
+ p38                  || 15        
+
+ p39                  || 25        
+
+ c40                  || 48        
+
+ c41                  || 37        
+
+ c42                  || 44        
+
+ c43                  || 48        
+
+ c44                  || 50        
+
+ c45                  || 50        
+
+ c46                  || 51        
+
+ c47                  || 52        
+
+ c48                  || 53        
+
+ c49                  || 49        
+
+ c50                  || 53        
+
+ c51                  || 41        
+
+ c52                  || 51        
+
+ c53                  || 44        
+
+ c54                  || 52        
+
+ c55                  || 48        
+
+ c56                  || 54        
+
+ c57                  || 56        
+
+ c58                  || 42        
+
+ c59                  || 39        
+
+ c60                  || 50        
+
+ c61                  || 48        
+
+ c62                  || 47        
+
+ c63                  || 43        
+
+ c64                  || 47        
+
+ c65                  || 38        
+
+ c66                  || 59        
+
+ c67                  || 50        
+
+ c68                  || 44        
+
+ c69                  || 59        
+
+ c70                  || 55        
+
+ c71                  || 49        
+
+ c72                  || 48        
+
+ c73                  || 49        
+
+ c74                  || 51        
+
+ c75                  || 50        
+
+ c76                  || 61        
+
+ c77                  || 50        
+
+ c78                  || 53        
+
+ c79                  || 54        
+
+ w80                  || 26        
+
+ w81                  || 19        
+
+ w82                  || 31        
+
+ w83                  || 25        
+
+ w84                  || 17        
+
+ w85                  || 24        
+
+ w86                  || 18        
+
+ w87                  || 22        
+
+ w88                  || 23        
+
+ w89                  || 25        
+
+ w90                  || 21        
+
+ w91                  || 27        
+
+ w92                  || 18        
+
+ w93                  || 20        
+
+ w94                  || 26        
+
+ w95                  || 25        
+
+ w96                  || 22        
+
+ w97                  || 24        
+
+ w98                  || 12        
+
+ w99                  || 26        
+
+ w100                 || 23        
+
+ w101                 || 29        
+
+ w102                 || 24        
+
+ w103                 || 21        
+
+ w104                 || 18        
+
+ w105                 || 26        
+
+ w106                 || 28        
+
+ w107                 || 20        
+
+ w108                 || 21        
+
+ w109                 || 25        
+
+ w110                 || 28        
+
+ w111                 || 21        
+
+ w112                 || 17        
+
+ w113                 || 28        
+
+ w114                 || 31        
+
+ w115                 || 20        
+
+ w116                 || 26        
+
+ w117                 || 27        
+
+ w118                 || 19        
+
+ w119                 || 25        
+
+ t120                 || 67        
+
+ t121                 || 65        
+
+ t122                 || 52        
+
+ t123                 || 51        
+
+ t124                 || 58        
+
+ t125                 || 50        
+

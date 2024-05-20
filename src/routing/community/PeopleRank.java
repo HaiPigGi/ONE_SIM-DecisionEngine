@@ -58,7 +58,7 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
      * Map to store the PeopleRank values for each host along with the total number
      * of friends
      */
-    protected Map<DTNHost, TupleDe<Double, Integer>> per = new HashMap<>();
+    protected Map<DTNHost, TupleDe<Double, Integer>> per;
     protected Map<DTNHost, List<Duration>> connHistory; // Store connection history for each host
     protected Map<DTNHost, Double> startTimestamps; // Store the start timestamps for each connection
     protected Set<DTNHost> thisHostSet; // Set to store friends of this host
@@ -83,9 +83,9 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
         } else {
             this.treshold = 700;
         }
-        connHistory = new HashMap<>();
+        connHistory = new HashMap<DTNHost, List<Duration>>();
         per = new HashMap<>();
-        thisHostSet = new HashSet<>();
+        thisHostSet = new HashSet<DTNHost>();
     }
 
     /**
@@ -99,8 +99,9 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
         this.treshold = r.treshold;
         startTimestamps = new HashMap<DTNHost, Double>();
         // Initialize a new connection history map
-        this.connHistory = new HashMap<>();
-        this.thisHostSet = new HashSet<>();
+        this.connHistory = new HashMap<DTNHost, List<Duration>>();
+        this.thisHostSet = new HashSet<DTNHost>();
+        this.per = new HashMap<>();
     }
 
     @Override
@@ -341,8 +342,12 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
     }
 
     @Override
-    public void update(DTNHost thisHost) {}
+    public void update(DTNHost thisHost) {
+    }
 
+    /**
+     * its for reports
+     */
     public Map<DTNHost, Double> getAllRankings() {
         Map<DTNHost, Double> rankings = new HashMap<>();
 
@@ -351,6 +356,8 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
             DTNHost currentHost = entry.getKey();
             TupleDe<Double, Integer> tuple = entry.getValue();
 
+            // double getRank = entry.getValue();
+
             // Add the host and its ranking to the map
             rankings.put(currentHost, tuple.getFirst());
         }
@@ -358,18 +365,11 @@ public class PeopleRank implements RoutingDecisionEngine, RankingNodeValue {
         return rankings;
     }
 
-    public double getRanking(DTNHost host) {
-        // Check if the host exists in the per map
-        if (per.containsKey(host)) {
-            // Retrieve the tuple containing the PeopleRank value for the host
-            TupleDe<Double, Integer> tuple = per.get(host);
-            // Return the PeopleRank value from the tuple
-            System.out.println(tuple.getFirst());
-            return tuple.getFirst();
-        } else {
-            // If the host is not found in the per map, return a default value (e.g., 0)
-            return 0.0; // or any other default value as per your requirement
-        }
+    @Override
+    public int getTotalTeman(DTNHost host) {
+        DecisionEngineRouter d = (DecisionEngineRouter) host.getRouter();
+        PeopleRank othRouter = (PeopleRank) d.getDecisionEngine();
+        return othRouter.per.size();
     }
 
 }

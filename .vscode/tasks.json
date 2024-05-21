@@ -8,7 +8,7 @@
     },
     {
       "label": "run_one",
-      "command": "./one.bat -b 1 ./conf/PeopleRank_Settings.txt",
+      "command": "./one.bat -b 1 ./conf/SprayAndWaitRouterUpdateForward_settings.txt",
       "type": "shell"
     },
     {

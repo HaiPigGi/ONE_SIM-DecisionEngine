@@ -197,7 +197,7 @@ public class ProphetRouter extends ActiveRouter {
 		if (exchangeDeliverableMessages() != null) {
 			return;
 		}
-		
+		System.out.println(tryOtherMessages());
 		tryOtherMessages();		
 	}
 	
@@ -237,7 +237,7 @@ public class ProphetRouter extends ActiveRouter {
 		if (messages.size() == 0) {
 			return null;
 		}
-		
+		// System.out.println(messages);
 		// sort the message-connection tuples
 		Collections.sort(messages, new TupleComparator());
 		return tryMessagesForConnected(messages);	// try to send messages

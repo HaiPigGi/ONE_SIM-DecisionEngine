@@ -179,17 +179,17 @@ public class SprayAndWaitRouterUpdateForward extends ActiveRouter {
     public Message messageTransferred(String id, DTNHost from) {
         Message msg = super.messageTransferred(id, from);
         Integer nrofCopies = (Integer) msg.getProperty(MSG_COUNT_PROP);
-
+        SprayAndWaitRouterUpdateForward other = (SprayAndWaitRouterUpdateForward) from.getRouter();
         assert nrofCopies != null : "Not a SnW Message: " + msg;
 
         if (nrofCopies > 1) { // is binary
+
             nrofCopies = (int) Math.ceil(nrofCopies / 2.0);
         } else { // if its 1 goes with forwarding prophet algorithm
-            // Lb = L * Pad / Pab + Pb
-            // Jumlah copy node b = jumlah copy*pred(a ke d)/pred(a ke b)+pred(b ke d)d
-            double predFromTo = getPredsFor(from); // p(a,b)
-            double predDest = getPredsFor(msg.getTo());// p(b,d)
-            nrofCopies = (int) Math.ceil(nrofCopies * predFromTo / (predFromTo + predDest));
+            // check preds jika per lebih bagus maka kirim
+            if (other.getPredsFor(msg.getTo()) > getPredsFor(msg.getTo())) {
+                nrofCopies = 1;
+            }
         }
 
         msg.updateProperty(MSG_COUNT_PROP, nrofCopies);
@@ -221,11 +221,10 @@ public class SprayAndWaitRouterUpdateForward extends ActiveRouter {
          */
         nrofCopies = (Integer) msg.getProperty(MSG_COUNT_PROP);
         if (nrofCopies > 1) { // jika lebih dari 1 (Binary Spray)
-            nrofCopies /= 2; // Binary Spray
+            nrofCopies = (int) Math.floor(nrofCopies/2.0); // Binary Spray
         } else {
             nrofCopies--;
         }
-
         msg.updateProperty(MSG_COUNT_PROP, nrofCopies);
     }
 
@@ -345,7 +344,7 @@ public class SprayAndWaitRouterUpdateForward extends ActiveRouter {
 
         if (copiesLeft.size() > 1) {
             /* try to send those messages */
-            tryMessagesToConnections(copiesLeft, getConnections());
+            this.tryMessagesToConnections(copiesLeft, getConnections());
         } else { // if copies left 1
             tryOtherMessages();
         }
